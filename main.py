@@ -6,7 +6,8 @@ from time import sleep
 
 GOOGLE_API_KEY='AIzaSyB4UJ9nA4c3mhFXmfx-45XZil-67OHLBo4'
 genai.configure(api_key=GOOGLE_API_KEY)    
-model = genai.GenerativeModel('gemini-pro')
+# model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
 colLeft, colRight = st.columns([1,1])
 # Check if the pickle file exists
